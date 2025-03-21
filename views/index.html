@@ -3,17 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Satyam Rai - Portfolio</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Login</h1>
-    <form action="/login" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Satyam Rai</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Satyam Rai</h2>
+      <p>A passionate Software Developer proficient in Java, JavaScript, HTML, and CSS.</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science graduate with a passion for building scalable, responsive web applications. 
+        I have experience in Java, JavaScript, HTML, CSS, and Node.js. I am also certified in AWS Cloud 
+        Solutions Architecture and Microsoft Azure AI Fundamentals.
+      </p>
+      <h3>Education</h3>
+      <ul>
+        <li>B.Tech, Computer Science & Engineering - CMR University (CGPA: 8.09/10)</li>
+        <li>Senior Secondary (XII), Science - Saraswati Gyan Mandir Intermediate College (60.00%)</li>
+        <li>Secondary (X), CBSE - Divine Public School (85.00%)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Health Hub System (HHS)</h3>
+          <p>Designed a healthcare system architecture for doctor-patient interactions and service management.</p>
+          <p><strong>Tools Used:</strong> Microsoft Word, Canva, Figma, Lucidchart</p>
+        </div>
+        <div class="project-card">
+          <h3>Hand Gesture Character Recognition System (HGCRS)</h3>
+          <p>Developed a hand gesture recognition system using CNNs for real-time classification.</p>
+          <p><strong>Tools Used:</strong> Anaconda Navigator, Jupyter Lab, Keras, Tensorflow, OpenCV, GitHub</p>
+        </div>
+        <div class="project-card">
+          <h3>Dynamic Emergency Navigation System for Indoor Evacuation (DENS)</h3>
+          <p>Built an AR-based real-time indoor navigation system, reducing evacuation time by 30%.</p>
+          <p><strong>Tools Used:</strong> Unity, Vuforia, C#(Scripts), AR Core, GitHub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>Java</li>
+        <li>Bootstrap</li>
+        <li>Problem Solving</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="/contact" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Satyam Rai. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
