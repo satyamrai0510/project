@@ -3,7 +3,8 @@ const path = require('path');
 const axios = require('axios'); // Add axios for API calls
 
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware to serve static files (CSS, JS)
 app.use(express.static(path.join(__dirname, 'public')));
